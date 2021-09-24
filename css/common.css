@@ -1,0 +1,193 @@
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Montserrat&family=Nanum+Myeongjo&family=Source+Serif+Pro&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Gowun Batang', serif;
+font-family: 'Source Serif Pro', serif;
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.inner{
+    max-width:1400px;
+    margin:0 auto;
+}
+
+/* ---------- mobile ----------*/
+.mobile{
+    font-size:36px;
+    width:0;
+    height: 50vh;
+    background-color:#aaa;
+    color:#fff;
+    position: fixed;
+    top:15px;
+    left:20px;
+    z-index:9999999;
+    cursor: pointer;
+    display:none;
+}
+
+
+/* ---------- header ----------*/
+#header{
+    display: flex;
+    z-index: 9999;
+    width:100%;
+    position: fixed;
+    top:10px;
+    left: 0;
+    color:#000;
+    /* background-color: rgba(255,255,255,0.2); */
+}
+#header.on{
+    background-color:#003586;
+    width:100%;
+    position: fixed;
+    top:0px;
+    left: 0;
+    color:#fff;
+}
+#header .header {
+    float:left;
+    width:80%;
+    display: flex;
+}
+#header h1{
+    font-size:40px;
+    font-family: 'Montserrat', sans-serif;
+    margin:30px 50px 40px 90px;
+    width:500px;
+    letter-spacing: -1px;
+    color:#fff;
+}
+#header h1.on{
+    font-size:24px;
+    color:#fff;
+    margin:20px 50px 20px 90px;
+    letter-spacing: 0;
+}
+
+#header .depth1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#header .depth1 li {
+    font-size:18px;
+    font-weight: 400;
+    margin:0 25px;
+    width:150px;
+    color:#fff;
+}
+#header .depth1 li:hover{
+    color: #003586;
+}
+#header .depth1.on li{
+    width:150px;
+    color:#fff;
+}
+#header .depth1.on li:hover{
+    font-weight: bold;
+}
+#header .depth1 .depth2{
+    width:200px;
+    height:0;
+    position: absolute;
+    top:100%;
+    left:0;
+    color:#fff;
+    background-color: #004086;
+}
+#header .depth1 .depth2 >li{
+    display: none;
+}
+#header .depth1.on .depth2{
+    transition: all 0.2s;
+}
+#header .depth1.on > li:first-child:hover .depth2{
+    height: 200px;
+}
+#header .depth1.on .depth2 > li{
+    display: none;
+}
+#header .depth1.on li:first-child:hover .depth2 > li{
+    display: block;
+}
+#header .depth1.on .depth2 > li{
+    font-size:14px;
+    margin-top:20px;
+}
+#header .member {
+    width:10%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left:150px;
+}
+#header .member a {
+    margin:0 20px;
+}
+
+/* ---------- footer ----------*/
+#footer{
+    padding:70px 0 0;    
+    background-color:gray;
+}
+#footer .footer_wrap{
+    width:100%;
+    height: 200px;
+    color:#fff;
+    position: relative;
+    padding:15px 0;
+    line-height: 1.5;
+}
+#footer .footer_wrap .mini{
+    position: absolute;
+    top:-40px;
+    left:0;
+}
+#footer .footer_wrap li{
+    margin-right:20px;
+}
+#footer .footer_wrap .info{
+    float: left;
+    width:25%;
+}
+#footer .footer_wrap .contact{
+    float: left;
+    width:25%;
+}
+#footer .footer_wrap .sns {
+    float: left;
+    width:25%;
+    font-size:36px;
+    display: flex;
+}
+#footer .footer_wrap .sns li{
+    margin-right:40px;
+}
+#footer .footer_wrap .sns li:hover{
+    color:#003586;
+    transition: all 0.3;
+}
+#footer .footer_wrap .law {
+    float: left;
+    width:25%;
+}
+#footer .footer_wrap .law span{
+    font-weight: bold;
+}
+#footer .footer_wrap .footer_txt{
+    position: absolute;
+    bottom:10px;
+    left:25%;
+    font-size:14px;
+}
+#footer .footer_wrap .footer_txt span{
+    display: block;
+}

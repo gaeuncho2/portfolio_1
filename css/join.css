@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+legend {
+    display: none;
+}
+#header {
+    background-image: url(../img/join_ban.jpg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    margin-top:-20px;
+}
+#header .depth1 li{
+    color:#000;
+}
+#container{
+    padding:200px 0 100px
+}
+
+.joinForm  h2{
+    font-size:36px;
+    margin:-40px 0 20px;
+}
+.joinForm {
+    width:900px;
+    margin:216px auto 80px;
+    border:1px solid #ddd;
+    border-radius: 20px;
+    text-align: center;
+    padding:100px 30px 80px
+}
+
+.joinForm col:nth-child(1){
+    width:20%;
+}
+.joinForm col:nth-child(2){
+    width:auto;
+}
+.joinWrap th,
+.joinWrap td{
+    border:1px solid #ccc;
+    padding:10px;
+    text-align: left;
+}
+
+.joinWrap input[type="text"],
+.joinWrap input[type="password"]{
+    border:1px solid #555;
+    border-radius: 3px;
+    width:150px;
+    height: 25px;
+    text-indent: 0.5em;
+}
+.joinWrap #pid + button{
+    background-color:#003586;
+    color:#fff;
+    font-size:14px;
+    padding:5px 10px;
+    margin-left:10px;
+    border-radius:3px;
+}
+.joinWrap #ppw + span{
+    font-size:12px;
+    color:#bbb;
+}
+.joinWrap #emcom{
+    height: 25px;
+    border:1px solid #555;
+    border-radius: 3px;
+}
+
+.joinWrap #memo{
+    width:500px;
+    height:150px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+    padding:2px 0;
+}
+
+.joinWrap .btn{
+    margin-top:40px;
+    text-align: center;
+}
+.joinWrap .btn button{
+    width:85px;
+    height: 40px;
+    background:#003586;
+    color:#fff;
+    border-radius: 5px;
+    margin:0 20px;
+}
+.joinWrap .btn button[type='reset']{
+    background-color:#fff;
+    color:#000;
+}

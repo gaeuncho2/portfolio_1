@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+
+/* ---------- section1 main slide ----------*/
+#sect1{
+    width:100%;
+    height: 100%;
+}
+#sect1 .slideInner{
+    height: 100vh;
+}
+#sect1 .slideInner .slide{
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#sect1 .slideInner .slide1{
+    background-image: url(../img/main_slide1.jpg);
+    background-position: center top;
+}
+#sect1 .slideInner .slide2{
+    background-image: url(../img/main_slide2.jpg);
+    background-position: center center;
+}
+#sect1 .slideInner .slide3{
+    background-image: url(../img/main_slide3.jpg);
+    background-position: center 50%;
+}
+#sect1 .slideInner .slide p{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:60px;
+    font-weight:bold;
+    color:#fff;
+    position:absolute;
+    top:43%;
+    left:100px;
+    line-height:1.5;
+    text-shadow: 2px 1px 10px rgba(0,0,0,0.8);
+}
+#sect1 .slideInner .slide p span{
+    display: block;
+}
+#sect1 .slideInner .slick-dots {
+    position:absolute; 
+    bottom:50px; 
+    width:100%;
+    text-align:center; 
+    z-index:9998; 
+}
+#sect1 .slideInner .slick-dots li {
+    display:inline-block;
+    margin:0 10px
+}
+#sect1 .slideInner .slick-dots li button {
+    width:15px;
+    height:15px;
+    background:#fff;
+    border-radius:50%;
+    border:none; 
+    text-indent:-9999px;
+    overflow:hidden;
+    transition:all 0.5s;
+}
+#sect1 .slideInner .slick-dots li.slick-active button {
+    width:34px;
+    border-radius:50px;
+    background:#003586
+}
+.slideInner .slide.slick-active p:nth-child(1){
+    animation:fadeInDown 1.5s both 0.4s;
+}
+.slideInner .slide.slick-active p:nth-child(2){
+    animation:fadeInDown 1.5s both 0.4s;
+}
+.slideInner .slide.slick-active p:nth-child(3){
+    animation:fadeInDown 1.5s both 0.4s;
+}
+
+/* ---------- section2 pb magazine ----------*/
+#sect2{
+    padding:180px 0 230px;
+    background-color:#eee
+}
+#sect2 .productTxt{
+    position: relative;
+}
+#sect2 .productTxt h2{
+    font-size:40px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom:50px;
+}
+#sect2 .productTxt p{
+    border:0px solid black;
+    border-radius: 30px;
+    padding:10px 20px;
+    position: absolute;
+    right:0;
+    top:30px;
+    transition: all 0.3s;
+}
+#sect2 .productTxt p:hover{
+    background-color:#003586;
+    color:#fff;
+}
+#sect2 .product{
+    display: flex;
+    justify-content: space-between;
+}
+#sect2 .product div{
+    width:32%;
+    position: relative;
+    overflow:hidden;
+}
+#sect2 .product div::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom:48px;
+    width:0%;
+    height: 35px;
+    background-color:rgba(0,0,0,0.4);
+    transition:all 0.5s
+}
+#sect2 .product div:hover::after{
+    width:100%;
+}
+#sect2 .product div > img{
+    transition: all 0.8s;
+}
+#sect2 .product div::before{
+    content:'';
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.3);
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    transition:all 0.3s
+}
+#sect2 .product div:hover::before{
+    background-color:rgba(0,0,0,0);
+}
+#sect2 .product div:hover > img{
+    transform:scale(1.2)
+}
+#sect2 .product div p{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:24px;
+    font-weight: bold;
+    position: absolute;
+    bottom:50px;
+    right:50px;
+    color:#fff;
+    transition:all 0.8s;
+    z-index:999;
+}
+#sect2 .product div:hover p{
+    right:50%;
+    transform:translateX(50%)
+}
+#sect2 .product .mobmore{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:18px;
+    background-color:rgba(00,35,86,0.8);
+    text-align:center;
+    padding:22% 0;
+    color:#fff;
+    display: none;
+    cursor: pointer;
+}
+#sect2 .product .mobmore::after{
+    display:none;
+}
+
+/* ---------- section3 pb story ----------*/
+#sect3{
+    padding:170px 0 250px 0;
+}
+#sect3 h2{
+    font-size:40px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom:50px;
+}
+#sect3 .slideInner .slide{
+    padding:10px;
+}
+#sect3 .slideInner .slide .slide_txt h3{
+    font-size:24px;
+    font-family: 'Gowun Batang', serif;
+    font-weight: bold;
+    word-break: keep-all;
+    padding:30px 0;
+}
+#sect3 .slideInner .slick-slide {
+    opacity: 0.5;
+    transform: scale(0.85);
+    transition: all 0.5s;
+  }
+/* .slick-active : 무대에 보여지는 슬라이드 */
+#sect3 .slideInner .slick-slide.slick-active {
+    opacity: 1;
+  }
+/* .slick-current : 중심에 보여질 슬라이드 */
+#sect3 .slideInner .slick-slide.slick-active.slick-center.slick-current {
+    opacity: 1;
+    transform: scale(1)
+}
+#sect3 .slideInner .slick-arrow{
+    font-size:50px;
+    color:#000;
+    position:absolute;
+    top:40%;
+    /* transform: translateY(-50%); */
+    background:none;
+    border:none
+}
+#sect3 .slideInner .slick-arrow:nth-of-type(1){
+    left:-100px;
+    z-index: 9999;
+}
+#sect3 .slideInner .slick-arrow:nth-of-type(2){
+    right:-100px;
+}
+
+/* ---------- section4 pb magazine ----------*/
+#sect4{
+    padding:60px 0 200px;
+    background-color: #F9FDE0;
+}
+#sect4 .mgz{
+    border:0px solid red
+}
+#sect4 .mgz > div{
+    height: 1200px;
+    margin-bottom:50px;
+    background-repeat:no-repeat; 
+    background-size:contain;
+    background-position: 300px center; 
+    background-attachment: fixed;
+}
+#sect4 .mgz > div > p{
+    color:#000;
+    font-size:28px;
+    font-family: 'Gowun Batang', serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+#sect4 .mgzCont1{
+    background-image:url(../img/mgz1.jpg);
+    position: relative;
+}
+#sect4 .mgz .mgzCont2{ /* 부모이름 붙이기 */ 
+    background-image:url(../img/mgz2.jpg);
+    background-position: 800px center;
+    position: relative;
+}
+#sect4 .mgzCont3{
+    background-image:url(../img/mgz3.jpg);
+    position: relative
+}
+#sect4 .mgzCont1 > p,
+#sect4 .mgzCont3 > p {
+    position: absolute;
+    top:40%;
+    right:15%;
+}
+#sect4 .mgzCont2 > p {
+    position: absolute;
+    top:40%;
+    left:10%;
+}
+#sect4 .mgzCont1 > p > a,
+#sect4 .mgzCont2 > p > a,
+#sect4 .mgzCont3 > p > a{
+    display: inline-block;
+    font-size:20px;
+    margin-top:20px;
+}
+#sect4 .mgzCont1 > p > a:hover,
+#sect4 .mgzCont2 > p > a:hover,
+#sect4 .mgzCont3 > p > a:hover{
+    color:#003586;
+}
+
+
+
+/* ---------- section5 promotion ----------*/
+#sect5{
+    padding:100px 0 150px 0;    
+}
+#sect5 h2{
+    font-size:40px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom:50px;
+}
+#sect5 .promotion .promo{
+    float:left;
+    width:31%;
+    margin:10px 10px 30px;
+    position: relative;
+}
+#sect5 .promotion .promo::before{
+    content:'';
+    width:100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0);
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transition:all 0.3s
+}
+#sect5 .promotion .promo:hover::before{
+    background-color:rgba(0,0,0,0.4);
+}
+#sect5 .promotion .promo .fa-arrow-circle-right{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size:60px;
+    color:#fff;
+    transition: all 0.3s;
+    opacity: 0;
+}
+#sect5 .promotion .promo:hover .fa-arrow-circle-right{
+    opacity: 1;
+}

@@ -1,0 +1,44 @@
+
+/* ---------- board1 - bread ----------*/
+section{
+    padding:150px 0 160px;
+}
+.tabTit li{
+    font-size:14px;
+    display:inline-block;
+    padding:10px 20px;
+    background-color:#003586;
+    border-radius: 5px;
+    color:#fff;
+    margin-right: 5px;
+}
+.tabTit li a{
+    display:block;
+}
+.tabTit li:hover{
+    background-color:#ccc;
+    color:#000;
+    font-weight: bold;
+}
+
+.breadList li{
+    float:left;
+    width:25%;
+    padding:10px
+}
+.breadList li:nth-child(4n+1){
+    clear: both;
+}
+.breadList li > a{
+    width:250px;
+    height: 250px;
+}
+.breadList li > a > img {
+    width:250px;
+    margin:13%;
+
+}
+strong{
+    display: block;
+    text-align: center;
+}

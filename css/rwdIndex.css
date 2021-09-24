@@ -1,0 +1,116 @@
+@media screen and (max-width: 600px) {
+
+    /* ---------- section1 main slide ----------*/
+    #sect1 .slideInner{
+        height: 100vh;
+    }
+    #sect1 .slideInner .slide{
+        height: 100vh;
+    }
+    #sect1 .slideInner .slide1{
+        background-image: url(../img/mgz1.jpg);
+        background-position: center top;
+    }
+    #sect1 .slideInner .slide2{
+        background-image: url(../img/mgz3.jpg);
+        background-position: center center;
+    }
+    #sect1 .slideInner .slide3{
+        background-image: url(../img/mgz2.jpg);
+        background-position: center 50%;
+    }
+    #sect1 .slideInner .slide p{
+        font-size:34px;
+        top:70%;
+        left:10%;
+    }
+    #sect1 .slideInner .slick-dots li button {
+        width:10px;
+        height:10px;
+    }
+    #sect1 .slideInner .slick-dots li.slick-active button {
+        width:30px;
+    }
+
+    /* ---------- section2 pb magazine ----------*/
+    #sect2{
+        padding:150px 0 230px;
+    }
+    #sect2 .productTxt h2{
+        font-size:34px;
+        margin-left:40px;
+    }
+    #sect2 .productTxt p{
+        display: none;
+    }
+    #sect2 .product{
+        display: block;
+    }
+    #sect2 .product div{
+        float: left;
+        width:48%;
+        margin:1%;
+    }
+    #sect2 .product div p{
+        font-size:18px;
+        bottom:55px;
+    }
+    #sect2 .product div:hover p{
+        right:40%;
+        transform:translateX(50%)
+    }
+    #sect2 .product .mobmore{
+        display: block;
+        transition: all 0.4s;
+    }
+
+    /* ---------- section3 pb story ----------*/
+    #sect3{
+        padding:150px 0 150px;
+    }
+    #sect3 h2{
+        font-size:34px;
+        margin-left:40px;
+    }
+
+    /* ---------- section4 pb magazine ----------*/
+    #sect4{
+        padding:0 0 ;
+        background-color: #F9FDE0;
+    }
+    #sect4 .mgz > div{
+        margin-bottom:0px;
+        background-position: left center; 
+        background-size:cover;
+    }
+    #sect4 .mgz .mgzCont2{
+        background-position:right center;
+    }
+    #sect4 .mgz > div > p{
+        font-size:24px;
+    }
+    #sect4 .mgzCont1 > p,
+    #sect4 .mgzCont3 > p {
+        top:25%;
+        right:15%;
+    }
+    #sect4 .mgzCont2 > p {
+        top:40%;
+        left:15%;
+    }
+        
+    /* ---------- section5 promotion ----------*/
+    #sect5{
+        padding:100px 0 150px 0;    
+    }
+    #sect5 h2{
+        font-size:34px;
+        margin-left:40px;
+    }
+    #sect5 .promotion .promo{
+        float:left;
+        width:48%;
+        margin:5px 5px 10px;
+        position: relative;
+    }
+}

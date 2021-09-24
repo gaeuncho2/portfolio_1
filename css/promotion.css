@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+.boardTop{
+    margin:200px 0 50px;
+    color:#000;
+    font-size:28px;
+    text-align: center;
+}
+.boardBox {
+    padding-bottom:160px;
+}
+.boardBox .boardSearch {
+    float:right;
+    margin:0 20px 15px 0;
+}
+.boardBox .boardSearch input[type="text"]{
+    width:150px;
+    border:1px solid #ccc;
+    margin-right:10px;
+}
+.boardBox .boardSearch a:hover{
+    color:blue
+}
+.boardWrap table{
+    font-size:15px;
+    color:#222;
+}
+.boardWrap th,
+.boardWrap td{
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    padding:20px 20px;
+    text-align: center;
+}
+.boardWrap th{
+    border-top:3px solid #003586;
+    background-color:#e5e5e5;
+    color:#000;
+}
+.boardWrap col:nth-child(1){
+    width:200px;
+}
+.boardWrap col:nth-child(2){
+    width:auto;
+}
+.boardWrap col:nth-child(3){
+    width:300px;
+}
+.boardWrap tbody td:nth-child(2){
+    text-align: left;
+}
+.boardWrap tbody td:nth-child(2):hover{
+    color:#003586;
+}
+.boardWrap .pageno{
+    text-align: center;
+    margin:50px 0;
+}
+.boardWrap .pageno button{
+    vertical-align: middle;
+    border:none;
+    font-size:20px;
+}
+.boardWrap .pageno button:hover{
+    color:rgb(83, 104, 238)
+}
+.boardWrap .pageno ul{
+    display: inline-block;
+    vertical-align: middle;
+}
+.boardWrap .pageno ul li{
+    display: inline-block;
+    margin:20px;
+    color:#000;
+}
+.boardWrap .pageno ul li:hover a{
+    color:#000;
+    text-decoration:underline #003586;
+}
+.boardWrap .pageno ul li:first-child{
+    margin-left:40px;
+}
+.boardWrap .pageno ul li:last-child{
+    margin-right:40px;
+}
