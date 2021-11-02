@@ -88,6 +88,8 @@
     }
     #sect4 .mgz > div > p{
         font-size:24px;
+        color:#ccc;
+        text-shadow: 2px 3px 2px rgba(0,0,0,0.8);
     }
     #sect4 .mgzCont1 > p,
     #sect4 .mgzCont3 > p {

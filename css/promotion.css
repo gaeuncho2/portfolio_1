@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .boardTop{
-    margin:200px 0 50px;
+    margin:150px 0 50px;
     color:#000;
     font-size:28px;
     text-align: center;
@@ -14,12 +14,16 @@
     margin:0 20px 15px 0;
 }
 .boardBox .boardSearch input[type="text"]{
-    width:150px;
+    width:200px;
+    height: 30px;
     border:1px solid #ccc;
     margin-right:10px;
 }
+.boardBox .boardSearch a{
+    color:#999
+}
 .boardBox .boardSearch a:hover{
-    color:blue
+    color:#003586
 }
 .boardWrap table{
     font-size:15px;

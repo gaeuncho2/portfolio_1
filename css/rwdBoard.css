@@ -1,0 +1,30 @@
+@media screen and (max-width: 600px) {
+    .mobile{
+        display:block;
+        margin-top:-7px
+    }
+    #header.on{
+        height: 70px;
+    }
+    #header h1.on{
+        margin:4% 35%;
+    }
+    .tabTit {
+        display: flex;
+        justify-content: space-between;
+    }
+    .tabTit li{
+        margin-right: 0px;
+        padding:10px 10px;
+    }
+    .breadList li{
+        float:left;
+        width:31%;
+    }
+    .breadList li:nth-child(3n+1){
+        clear: both;
+    }
+    .breadList li:nth-child(4n+1){
+        clear: none;
+    }
+}

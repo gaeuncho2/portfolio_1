@@ -15,7 +15,7 @@ $('#sect1 .slideInner').slick({
     autoplaySpeed:5000,
     pauseOnHover:true,
     dots:true,
-    arrows:false,
+    arrows:false
 })
 
 var sct = 0;
@@ -51,7 +51,7 @@ $('#sect3 .slideInner').slick({
     slidesToShow:3,
     dots:false,
     centerMode:true,
-    centerPadding:'100px',
+    centerPadding:'70px',
     arrows:true,
     prevArrow : '<button><i class="fas fa-angle-left"></i></button>',
     nextArrow : '<button><i class="fas fa-angle-right"></i></button>',
@@ -65,3 +65,10 @@ $('#sect3 .slideInner').slick({
         }
     }]
 })
+
+
+// var skroll = new Skroll()
+// .add(".sk1", {animation:"fadeInRight", duration:5000, wait:1000})
+// .add(".sk2", {animation:"fadeInLeft", duration:5000, wait:1000})
+// .init()
+ 

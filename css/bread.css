@@ -6,11 +6,22 @@ section{
 .tabTit li{
     font-size:14px;
     display:inline-block;
-    padding:10px 20px;
-    background-color:#003586;
-    border-radius: 5px;
-    color:#fff;
+    padding:10px 18px;
+    border-radius: 10px;
     margin-right: 5px;
+    position: relative;
+}
+.tabTit li::after{
+    content:'';
+    width:1px;
+    height: 15px;
+    position: absolute;
+    right:-4px;
+    top:12px;
+    background-color:#aaa;
+}
+.tabTit li:last-child::after{
+    display: none;
 }
 .tabTit li a{
     display:block;
@@ -21,13 +32,47 @@ section{
     font-weight: bold;
 }
 
+.search {
+    float:right;
+    margin-top:-40px;
+}
+.search input[type="text"]{
+    width:200px;
+    height: 30px;
+    border:1px solid #ccc;
+    padding:10px;
+}
+.search button{
+    color:#999;
+    border:none;
+    font-size:20px;
+    margin-left:10px;
+}
+.search button:hover{
+    color:#003586;
+}
+
+
 .breadList li{
-    float:left;
-    width:25%;
-    padding:10px
+    float:left; 
+    width:23%;
+    margin:1%;
+    height: 500px;
+    padding:10px;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    border:1px solid #ccc;
 }
 .breadList li:nth-child(4n+1){
     clear: both;
+}
+.breadList li img {
+    transition:all 0.5s;
+    height: 250px;
+}
+.breadList li:hover img {
+    transform:scale(1.2)
 }
 .breadList li > a{
     width:250px;
@@ -36,9 +81,33 @@ section{
 .breadList li > a > img {
     width:250px;
     margin:13%;
-
 }
 strong{
     display: block;
     text-align: center;
+}
+
+.breadList li:hover .cart{
+    display: block;
+}
+.cart{
+    background-color:#777;
+    padding:15px 10px;
+    position: absolute;
+    right: 0;
+    bottom:195px;
+    display: none;
+}
+.cart span{
+    display:block;
+    margin:10px 0;
+    color:#fff;
+    font-size:20px;
+    cursor: pointer;
+}
+.cart span:nth-child(1):hover{
+    color:#f00
+}
+.cart span:nth-child(2):hover{
+    color:#003586
 }

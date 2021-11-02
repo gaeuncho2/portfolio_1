@@ -29,14 +29,15 @@
 }
 #sect1 .slideInner .slide p{
     font-family: 'Nanum Myeongjo', serif;
-    font-size:60px;
+    font-size:48px;
     font-weight:bold;
     color:#fff;
     position:absolute;
     top:43%;
-    left:100px;
+    right:10%;
     line-height:1.5;
-    text-shadow: 2px 1px 10px rgba(0,0,0,0.8);
+    text-align: right;
+    text-shadow: 0px 2px 10px rgba(0,0,0,0.4);
 }
 #sect1 .slideInner .slide p span{
     display: block;
@@ -80,7 +81,7 @@
 /* ---------- section2 pb magazine ----------*/
 #sect2{
     padding:180px 0 230px;
-    background-color:#eee
+    background-color:#ededed
 }
 #sect2 .productTxt{
     position: relative;
@@ -90,6 +91,16 @@
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     padding-bottom:50px;
+    position: relative;
+}
+#sect2 .productTxt h2::after{
+    content:'';
+    width:100%;
+    height: 1px;
+    background-color:#bbb;
+    position: absolute;
+    bottom:20px;
+    left:0;
 }
 #sect2 .productTxt p{
     border:0px solid black;
@@ -121,13 +132,16 @@
     width:0%;
     height: 35px;
     background-color:rgba(0,0,0,0.4);
-    transition:all 0.5s
+    transition:all 0.4s
 }
 #sect2 .product div:hover::after{
     width:100%;
 }
-#sect2 .product div > img{
-    transition: all 0.8s;
+#sect2 .product div img{
+    transition: all 0.4s;
+}
+#sect2 .product div:hover img{
+    transform:scale(1.1)
 }
 #sect2 .product div::before{
     content:'';
@@ -143,9 +157,6 @@
 }
 #sect2 .product div:hover::before{
     background-color:rgba(0,0,0,0);
-}
-#sect2 .product div:hover > img{
-    transform:scale(1.2)
 }
 #sect2 .product div p{
     font-family: 'Nanum Myeongjo', serif;
@@ -185,6 +196,16 @@
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     padding-bottom:50px;
+    position: relative;
+}
+#sect3 h2::after{
+    content:'';
+    width:100%;
+    height: 1px;
+    background-color:#bbb;
+    position: absolute;
+    bottom:20px;
+    left:0;
 }
 #sect3 .slideInner .slide{
     padding:10px;
@@ -219,6 +240,9 @@
     background:none;
     border:none
 }
+#sect3 .slideInner .slick-arrow:hover{
+    color:#003586
+}
 #sect3 .slideInner .slick-arrow:nth-of-type(1){
     left:-100px;
     z-index: 9999;
@@ -229,62 +253,159 @@
 
 /* ---------- section4 pb magazine ----------*/
 #sect4{
-    padding:60px 0 200px;
+    padding:150px 0;
     background-color: #F9FDE0;
 }
-#sect4 .mgz{
-    border:0px solid red
-}
 #sect4 .mgz > div{
-    height: 1200px;
-    margin-bottom:50px;
-    background-repeat:no-repeat; 
-    background-size:contain;
-    background-position: 300px center; 
-    background-attachment: fixed;
+    height: 400px;
+    overflow:hidden;
+    margin:30px 0;
+    position: relative;
 }
-#sect4 .mgz > div > p{
-    color:#000;
-    font-size:28px;
-    font-family: 'Gowun Batang', serif;
+#sect4 .mgz > div p{
+    font-size:22px;
     font-weight: bold;
-    line-height: 1.5;
+    font-family: 'Gowun Batang', serif;
 }
-#sect4 .mgzCont1{
-    background-image:url(../img/mgz1.jpg);
-    position: relative;
-}
-#sect4 .mgz .mgzCont2{ /* 부모이름 붙이기 */ 
-    background-image:url(../img/mgz2.jpg);
-    background-position: 800px center;
-    position: relative;
-}
-#sect4 .mgzCont3{
-    background-image:url(../img/mgz3.jpg);
-    position: relative
-}
-#sect4 .mgzCont1 > p,
-#sect4 .mgzCont3 > p {
-    position: absolute;
-    top:40%;
-    right:15%;
-}
-#sect4 .mgzCont2 > p {
-    position: absolute;
-    top:40%;
-    left:10%;
-}
-#sect4 .mgzCont1 > p > a,
-#sect4 .mgzCont2 > p > a,
-#sect4 .mgzCont3 > p > a{
+#sect4 .mgz > div p a{
+    font-size:18px;
+    font-weight: bold;
     display: inline-block;
-    font-size:20px;
-    margin-top:20px;
+    margin:30px 0;
+    transition:all 0.3s; 
+    color:#000;
 }
-#sect4 .mgzCont1 > p > a:hover,
-#sect4 .mgzCont2 > p > a:hover,
-#sect4 .mgzCont3 > p > a:hover{
-    color:#003586;
+/* ------------------ a태그 hover 추가 ------------------*/
+
+#sect4 .mgz > div span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-size:50px;
+    color:#fff;
+    animation:shakeY 2s infinite;
+}
+#sect4 .mgz > div:hover span{
+    display: none;
+}
+
+#sect4 .mgz > .mgzCont1 .mgz1{
+    border:0px solid blue;
+    border-radius: 70px;
+    float: left;
+    width:100%;
+    height: 400px;
+    background-image:url(../img/main_slide3.jpg);
+    background-position: 30% 50%;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    transition:all 0.6s
+}
+#sect4 .mgz > .mgzCont1 p{
+    border-radius: 70px;
+    padding:80px 70px;
+    float: right;
+    width:57%;
+    height: 400px;
+    background-color:#fff;
+}
+#sect4 .mgz > .mgzCont1:hover .mgz1{
+    background-position:30% 55%;
+    width:40%;
+}
+#sect4 .mgz > .mgzCont1::before{
+    content:'';
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.4);
+    border-radius: 70px;
+    transition: all 0.2s;
+}
+#sect4 .mgz > .mgzCont1:hover::before{
+    background-color:rgba(0,0,0,0);
+}
+
+#sect4 .mgz > .mgzCont2 .mgz2{
+    border-radius: 70px;
+    float: right;
+    width:100%;
+    height: 400px;
+    background-image:url(../img/mgzx.jpg);
+    background-position: center 80%;
+    overflow:hidden;
+    transition:all 0.6s
+}
+#sect4 .mgz > .mgzCont2 p{
+    border-radius: 20%;
+    float: left;
+    padding:100px 50px;
+    width:27%;
+    height: 400px;
+    background-color:#fff;
+}
+#sect4 .mgz > .mgzCont2:hover .mgz2{
+    background-position: center 55%;
+    width:70%;
+}
+#sect4 .mgz > .mgzCont2::before{
+    content:'';
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(0,0,0,0.4);
+    border-radius: 70px;
+    transition: all 0.2s;
+}
+#sect4 .mgz > .mgzCont2:hover::before{
+    background-color:rgba(0,0,0,0);
+}
+
+#sect4 .mgz > .mgzCont3 .mgz3{
+    border:0px solid blue;
+    border-radius: 70px;
+    float: left;
+    width:100%;
+    height: 400px;
+    background-image:url(../img/mgzx2.jpg);
+    background-position: center 90%;
+    overflow:hidden;
+    transition:all 0.6s
+}
+#sect4 .mgz > .mgzCont3 p{
+    border-radius: 70px;
+    padding:60px 50px;
+    float: right;
+    width:43%;
+    height: 400px;
+    background-color:#fff;
+}
+#sect4 .mgz > .mgzCont3:hover .mgz3{
+    background-position: center 60%;
+    width:54%;
+}
+#sect4 .mgz > .mgzCont3::before{
+    content:'';
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.4);
+    border-radius: 70px;
+    transition: all 0.2s;
+}
+#sect4 .mgz > .mgzCont3:hover::before{
+    background-color:rgba(0,0,0,0);
 }
 
 
@@ -298,10 +419,20 @@
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     padding-bottom:50px;
+    position: relative;
+}
+#sect5 h2::after{
+    content:'';
+    width:100%;
+    height: 1px;
+    background-color:#bbb;
+    position: absolute;
+    bottom:20px;
+    left:0;
 }
 #sect5 .promotion .promo{
     float:left;
-    width:31%;
+    width:31.5%;
     margin:10px 10px 30px;
     position: relative;
 }
